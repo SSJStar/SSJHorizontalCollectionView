@@ -2,7 +2,7 @@
 collectionView scrolling horizontally or vertically(横向或纵向滚动的collectionView)
 
 - - 使用案例
- 
+、、、
  - (void)viewWillAppear:(BOOL)animated{
      CellModel *model01 = [CellModel new];
      model01.iconName = @"";
@@ -31,3 +31,4 @@ collectionView scrolling horizontally or vertically(横向或纵向滚动的coll
      /// CellModel是自己定义的model类，你可以按照你自己的类名处理，
      /// 在refreshUI:里，model参数是id类型，需要强转一下
  }
+、、、
