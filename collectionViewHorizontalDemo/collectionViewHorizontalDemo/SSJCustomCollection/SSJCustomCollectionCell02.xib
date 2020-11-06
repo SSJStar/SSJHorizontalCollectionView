@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16G1036" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SSJCustomCollectionCell02">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gU8-9Y-aYA">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OpG-1Z-VNl">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OpG-1Z-VNl" secondAttribute="height" multiplier="1:1" id="Q40-WF-4Xz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CheckIn_delete@2x" translatesAutoresizingMaskIntoConstraints="NO" id="QVv-2u-D5s">
+                                <rect key="frame" x="15" y="15" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="6e9-Eh-GdS"/>
+                                    <constraint firstAttribute="width" constant="20" id="Qq6-aO-niA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QVv-2u-D5s" firstAttribute="centerY" secondItem="gU8-9Y-aYA" secondAttribute="centerY" id="1m0-7n-abj"/>
+                            <constraint firstItem="OpG-1Z-VNl" firstAttribute="top" secondItem="gU8-9Y-aYA" secondAttribute="top" id="Rf8-Wt-Otc"/>
+                            <constraint firstAttribute="bottom" secondItem="OpG-1Z-VNl" secondAttribute="bottom" id="bX7-tg-h6i"/>
+                            <constraint firstAttribute="trailing" secondItem="OpG-1Z-VNl" secondAttribute="trailing" id="d0O-sJ-1Lz"/>
+                            <constraint firstItem="OpG-1Z-VNl" firstAttribute="leading" secondItem="gU8-9Y-aYA" secondAttribute="leading" id="dSb-ig-K0U"/>
+                            <constraint firstItem="QVv-2u-D5s" firstAttribute="centerX" secondItem="gU8-9Y-aYA" secondAttribute="centerX" id="pdI-QL-k8b"/>
+                            <constraint firstAttribute="width" secondItem="gU8-9Y-aYA" secondAttribute="height" multiplier="1:1" id="rem-PU-8Qx"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECj-yk-Hpn">
+                        <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LL1-3R-cuL"/>
+                            <constraint firstAttribute="height" constant="20" id="zcq-pi-7pB"/>
+                        </constraints>
+                        <state key="normal" image="CheckIn_delete.png"/>
+                        <connections>
+                            <action selector="deleteButtonHandel:" destination="gTV-IL-0wX" eventType="touchUpInside" id="P6F-z7-4gB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="gU8-9Y-aYA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Sa-Xi-MKn"/>
+                <constraint firstAttribute="trailing" secondItem="ECj-yk-Hpn" secondAttribute="trailing" id="PvR-Dj-Rmd"/>
+                <constraint firstItem="gU8-9Y-aYA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hqZ-Y9-rGQ"/>
+                <constraint firstItem="ECj-yk-Hpn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kkT-ud-Ejo"/>
+                <constraint firstAttribute="trailing" secondItem="gU8-9Y-aYA" secondAttribute="trailing" id="poH-oW-uHf"/>
+            </constraints>
+            <size key="customSize" width="50" height="50"/>
+            <connections>
+                <outlet property="addLogo_imageView" destination="QVv-2u-D5s" id="L7c-rj-nRQ"/>
+                <outlet property="delete_button" destination="ECj-yk-Hpn" id="4r0-vr-hsb"/>
+                <outlet property="detail_imageView" destination="OpG-1Z-VNl" id="njd-C4-Hqm"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="250"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="CheckIn_delete.png" width="12" height="12"/>
+        <image name="CheckIn_delete@2x" width="18" height="18"/>
+    </resources>
+</document>
