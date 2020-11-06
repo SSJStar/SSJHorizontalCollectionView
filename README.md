@@ -1,7 +1,9 @@
 # SSJHorizontalCollectionView
 collectionView scrolling horizontally or vertically(横向或纵向滚动的collectionView)
 
-- - 使用案例
+1、拖拽SSJHorizontalCollectionView文件夹到你的项目里
+
+2、 使用案例
 ```
  - (void)viewWillAppear:(BOOL)animated{
      CellModel *model01 = [CellModel new];
